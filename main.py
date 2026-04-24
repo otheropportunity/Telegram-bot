@@ -30,7 +30,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(result)
 
-app = ApplicationBuilder().token(os.getenv("TOKEN")).build()
+app = ApplicationBuilder().token(os.getenv("8674749505:AAHhaEcfe3e4rD349oqIMG0CwT5Z7y0H3eA")).build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
 app.run_polling()
